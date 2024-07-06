@@ -69,7 +69,7 @@ async def session_step(client, message):
                 {"$set": session_data},
                 upsert=True
             )
-            await message.reply(f"✅ Session Generated Successfully! Here is your session string:\n\n`{session_string}`\n\nDon't share it with anyone, we are not responsible for any mishandling or misuse.\n\n**__Powered by Team SPY__**")
+            await message.reply(f"✅ Session Generated Successfully! Here is your session string:\n\n`{session_string}`\n\n**🐲 𝗗𝗥𝗔𝗚𝗢𝗡 𝗭𝗢𝗡𝗘 🐲**")
             
             await temp_client.disconnect()
             reset_user(user_id)
