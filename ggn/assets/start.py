@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/devggn")],
-        [Button.url("Contact Me", url="https://t.me/ggnhere")],
+        [Button.url("Join Channel", url="https://t.me/+zPqF46rm7YU3ODM9")],
+        [Button.url("Contact Me", url="https://t.me/Dragon_zone_owner_bot")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -114,8 +114,8 @@ TEXT = "Send me the Link of any message of Restricted Channels to Clone it here.
 
 M = "/plan"
 PREMIUM_PIC = "plan.png"
-PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).
-📥 **Download Limit**: Users can download up to 100 files in a single batch command.
+PRE_TEXT = """💰 **Premium Price**: 1 Month 500rs.
+📥 **Download Limit**: Users can download up to 10000 files in a single batch command.
 🛑 **Batch**: You will get two modes /bulk and /batch.
    - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
 📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.
@@ -125,7 +125,7 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+        [Button.url("CONTACT", url="https://t.me/Dragon_zone_owner_bot")]
     ]
 
     # Sending photo with caption and buttons
@@ -139,17 +139,14 @@ async def plan_command(event):
 T = "/terms"
 TERM_PIC = "term.png"
 TERM_TEXT = """📜 **Terms and Conditions** 📜\n
-✨ We are not responsible for user deeds, and we do not promote copyrighted content. If any user engages in such activities, it is solely their responsibility.
-✨ Upon purchase, we do not guarantee the uptime, downtime, or the validity of the plan. __Authorization and banning of users are at our discretion; we reserve the right to ban or authorize users at any time.__
-✨ Payment to us **__does not guarantee__** authorization for the /batch command. All decisions regarding authorization are made at our discretion and mood.
-"""
+🐲Koi Bhi Conditions Nahi Hai Daba Ke Use Karo 😁"""
 
 @gagan.on(events.NewMessage(pattern=f"^{T}"))
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Query?", url="https://t.me/ttonehelpbot"),
-         Button.url("Channel", url="https://telegram.dog/devggn")]
+        [Button.url("🐲OWNER🐲", url="https://t.me/Dragon_zone_owner_bot"),
+         Button.url("🎗️Channel🎗️", url="https://t.me/+zPqF46rm7YU3ODM9")]
     ]
 
     # Sending photo with caption and buttons
@@ -160,7 +157,7 @@ async def term_command(event):
         buttons=buttons
     )
 
-REPO_URL = "https://github.com/devgaganin/Save-Restricted-Content-Bot-Repo"
+REPO_URL = "https://t.me/Dragon_zone_owner_bot"
 
 HELP_TEXT = """Here are the available commands:
 
@@ -248,7 +245,7 @@ async def youtube_dl_command(_, message):
 
             # Get video metadata
             metadata = video_metadata(original_file)
-            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/advance_content_saver_bot)**__"  # Set caption to the title of the video
+            caption = f"{video_info['title']}\n\n__**𝗕𝗢𝗧 𝗠𝗔𝗗 𝗕𝗬  [🐲 𝗗𝗥𝗔𝗚𝗢𝗡 𝗭𝗢𝗡𝗘 🐲](https://t.me/Dragon_zone_owner_bot)**__"  # Set caption to the title of the video
             
             # Send the video file and thumbnail
             ggn = message.chat.id
