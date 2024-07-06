@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/+zPqF46rm7YU3ODM9")],
-        [Button.url("Contact Me", url="https://t.me/Dragon_zone_owner_bot")],
+        [Button.url("🐲Join Channel🐲", url="https://t.me/+zPqF46rm7YU3ODM9")],
+        [Button.url("⚠️Contact Me⚠️", url="https://t.me/Dragon_zone_owner_bot")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -116,9 +116,8 @@ M = "/plan"
 PREMIUM_PIC = "plan.png"
 PRE_TEXT = """💰 **Premium Price**: 1 Month 500rs.
 📥 **Download Limit**: Users can download up to 10000 files in a single batch command.
-🛑 **Batch**: You will get two modes /bulk and /batch.
-   - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
-📜 **Terms and Conditions**: For further details and complete terms and conditions, please send /terms.
+🛑 **Batch**: You will get two modes /bulk and /batch.\n
+⚠️ **Terms and Conditions**: Use Commad /terms.
 """
 
 @gagan.on(events.NewMessage(pattern=f"^{M}"))
