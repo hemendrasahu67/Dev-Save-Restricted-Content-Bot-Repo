@@ -9,4 +9,4 @@ BOT_TOKEN = getenv("BOT_TOKEN", "7428148949:AAEaukWQDRL1jsJsqQr642eTuGLxVaxYHWo"
 OWNER_ID = int(getenv("OWNER_ID", "7103902728"))
 MONGODB_CONNECTION_STRING = getenv("MONGO_DB", "mongodb+srv://mh:qFECbQkAflJ4Teqd@cluster0.c64io4v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 LOG_GROUP = int(getenv("LOG_GROUP", "-1001993672460"))
-FORCESUB = getenv("FORCESUB", "EX_DRAGON_ZONE")
+FORCESUB = getenv("FORCESUB", "Dragon_zone_backup")
